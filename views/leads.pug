@@ -3,8 +3,10 @@ extends layout
 block content
   h1= title
   if leads.length != 0
-    ul
-      for lead in leads
-        p #{lead.email}
+    for lead in leads
+      p
+        span #{lead.email}
+        | 
+        a(href='/leads/' + lead.id) Details
   else
     p No Leads

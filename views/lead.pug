@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  if lead
+    p #{lead.email}
+  else
+    p No Lead Selected
