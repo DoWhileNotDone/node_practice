@@ -1,3 +1,11 @@
+const models = require('../models');
+
+
 exports.get_leads = function(req, res, next) {
-  res.send('respond with a resource');
+  models.Lead.findAll().then(function(leads) {
+    res.render('leads', {
+       leads: leads,
+       title: 'Leads' 
+     });
+  });
 }
