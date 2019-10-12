@@ -1,5 +1,5 @@
 exports.get_landing = function(req, res, next) {
-  res.render('landing', { title: 'Arses' });
+  res.render('landing', { title: 'Enter your Email' });
 }
 
 exports.submit_lead = function(req, res, next) {
