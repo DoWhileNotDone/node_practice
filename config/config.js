@@ -9,11 +9,13 @@ module.exports = {
     "quoteIdentifiers": false
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
+    "username": "express",
+    "password": "password",
+    "database": "express_test",
+    "port": 5432,
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres",
+    "quoteIdentifiers": false
   },
   "production": {
     "username": "root",

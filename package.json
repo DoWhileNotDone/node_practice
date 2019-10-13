@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "test": "mocha 'test/apiTest.js' --exit"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,6 +17,9 @@
     "sequelize": "^5.19.6"
   },
   "devDependencies": {
-    "nodemon": "^1.19.3"
+    "chai": "^4.2.0",
+    "chai-dom": "^1.8.1",
+    "nodemon": "^1.19.3",
+    "supertest": "^4.0.2"
   }
 }
