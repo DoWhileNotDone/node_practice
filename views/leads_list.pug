@@ -7,6 +7,11 @@ block content
       p
         span #{lead.email}
         | 
-        a(href='/leads/' + lead.id) Details
+        a(href='/leads/' + lead.id) View
+        | 
+        a(href='/leads/' + lead.id + '/edit') Edit
   else
     p No Leads
+  a(href='/leads/new') New
+  | 
+  a(href='/') Home

@@ -1,3 +1,3 @@
 exports.index = function(req, res, next) {
-  res.render('index', { title: 'Arse' });
+  res.render('index', { title: 'Lead Builder' });
 }

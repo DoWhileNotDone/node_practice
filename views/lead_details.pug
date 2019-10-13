@@ -4,5 +4,9 @@ block content
   h1= title
   if lead
     p #{lead.email}
+    | 
+    a(href='/leads/' + lead.id + '/edit') Edit
   else
     p No Lead Selected
+  | 
+  a(href='/leads/') Leads

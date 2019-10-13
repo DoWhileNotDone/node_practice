@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p #{action} Lead
+  if lead
+    form(action="/leads/" + lead.id + '/edit', method="POST")
+      input(type="email", name="lead_email" value=lead.email)
+      button(type="submit") Submit
+  else
+    p No Lead Selected
+  | 
+  a(href='/leads/') Leads
+  

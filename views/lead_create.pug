@@ -2,7 +2,9 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-  form(action="/", method="POST")
+  p #{action} Lead
+  form(action="/leads/new", method="POST")
     input(type="email", name="lead_email" placeholder="Enter your email address")
     button(type="submit") Submit
+  | 
+  a(href='/leads/') Leads
